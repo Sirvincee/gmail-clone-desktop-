@@ -522,15 +522,26 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.h-\[10vh\] {
+  height: 10vh;
 }
 
-.font-bold {
-  font-weight: 700;
+.h-\[9vh\] {
+  height: 9vh;
 }
 
-.underline {
-  text-decoration-line: underline;
+.w-full {
+  width: 100%;
+}
+
+.borderlight {
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
+.border {
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }

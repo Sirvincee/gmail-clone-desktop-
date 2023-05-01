@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.borderlight {
+    @apply border-2 border-gray-600
+}
+
+.border {
+    @apply border-4 border-gray-600
+}
