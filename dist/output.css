@@ -556,6 +556,14 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -574,6 +582,11 @@ video {
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mb-1 {
@@ -618,6 +631,34 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .flex {
@@ -676,6 +717,18 @@ video {
   height: 100%;
 }
 
+.h-\[20px\] {
+  height: 20px;
+}
+
+.h-\[21px\] {
+  height: 21px;
+}
+
+.h-\[200vh\] {
+  height: 200vh;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -732,8 +785,32 @@ video {
   width: 100%;
 }
 
+.w-\[5\%\] {
+  width: 5%;
+}
+
+.w-\[10\%\] {
+  width: 10%;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-\[21px\] {
+  width: 21px;
+}
+
+.w-\[14\%\] {
+  width: 14%;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.cursor-wait {
+  cursor: wait;
 }
 
 .appearance-none {
@@ -760,6 +837,14 @@ video {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded-2xl {
@@ -794,6 +879,11 @@ video {
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-1 {
@@ -853,6 +943,29 @@ video {
   padding-right: 1.75rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.pl-9 {
+  padding-left: 2.25rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -867,12 +980,38 @@ video {
   line-height: 1rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .font-medium {
   font-weight: 500;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
 .tracking-tighter {
   letter-spacing: -0.05em;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 
 .outline-none {

@@ -122,7 +122,7 @@
                 type="search"
                 name="search"
                 id="search"
-                class="w-[600px] bg-transparent outline-none mx-3"
+                class="w-[600px] bg-transparent outline-none px-3"
                 placeholder="Search all conversations"
               />
             </span>
@@ -170,10 +170,10 @@
         </header>
 
         <!-- body(mails and texts) -->
-        <main class="w-full borderlight">
+        <main class="w-full">
           <!-- refresh, select type of mails and keyboard type -->
           <div class="w-full mt-3 p-3 flex justify-between">
-            <div class="w-[13%] flex items-center justify-around px-7">
+            <div class="w-[14%] flex items-center justify-around px-6">
               <!-- checkbox -->
               <span class="flex items-center">
                 <input
@@ -210,6 +210,30 @@
               <span class="cursor-pointer">▾</span>
             </div>
           </div>
+
+          <!-- types of mail -->
+          <div class="w-full p-2 pl-9 flex justify-between">
+            <!-- wrapper for 'important' -->
+            <div class="w-[10%]">
+              <span class="text-lg cursor-pointer">▴</span>
+              <span class="text-lg ml-2 cursor-pointer">Important</span>
+            </div>
+            <!-- wrapper for numbers of mail available -->
+            <div class="flex items-center">
+              <span class="text-[12px] tracking-wide cursor-pointer"
+                >1-25 of 271</span
+              >
+              <span class="cursor-pointer"
+                ><img
+                  src="./icons/vertical_menu-icon.png"
+                  alt="details-icon"
+                  class="w-[20px] h-[20px]"
+              /></span>
+            </div>
+          </div>
+
+          <!-- mails and texts -->
+          <section class="w-full h-[200vh]"></section>
         </main>
       </div>
 
