@@ -10,7 +10,7 @@
     <!-- section 1 -->
     <!-- wrapper -->
     <div class="flex">
-      <!-- sidebar -->
+      <!-- left-sidebar -->
       <section
         class="w-[4vw] h-[100vh] flex flex-col items-center py-2"
         style="background-color: #eaf1fb"
@@ -163,15 +163,72 @@
       </header>
 
       <!-- right side bar -->
-      <div class="w-[4vw] h-[100vh] flex flex-col items-center py-2">
+      <section class="w-[4vw] h-[100vh] flex flex-col items-center py-2">
         <!-- profile img -->
         <span class="w-10 h-10 mx-4 mt-1"
           ><img
             src="./img/sirvince.jpeg"
             alt="profile-picture"
-            class="w-10 h-10 rounded-full"
+            class="w-9 h-9 rounded-full"
         /></span>
-      </div>
+        <!-- container for google-calender, google-keep, contact & tasks -->
+        <!--overall wrapper-->
+        <div
+          class="w-full h-[35vh] mt-4 flex flex-col items-center justify-between py-8"
+        >
+          <!-- google-calender-->
+          <div
+            class="w-[80%] flex justify-center flex-col items-center cursor-pointer"
+          >
+            <span class="w-[100%] rounded-2xl flex justify-center">
+              <img
+                src="./icons/google_calender-icon.png"
+                alt="google_calender-icon"
+                class="w-7 h-7"
+              />
+            </span>
+          </div>
+
+          <!-- google keep-->
+          <div
+            class="w-[80%] flex justify-center flex-col items-center cursor-pointer"
+          >
+            <span class="w-[100%] rounded-2xl flex justify-center mb-1">
+              <img
+                src="./icons/google_keep-icon.png"
+                alt="google_keep-icon"
+                class="w-7 h-7"
+              />
+            </span>
+          </div>
+
+          <!-- tasks -->
+          <div
+            class="w-[80%] flex justify-center flex-col items-center cursor-pointer"
+          >
+            <span class="w-[100%] rounded-2xl flex justify-center mb-1">
+              <img
+                src="./icons/tasks-icon.png"
+                alt="google_tasks-icon"
+                class="w-7 h-7"
+              />
+            </span>
+          </div>
+
+          <!-- google contact-->
+          <div
+            class="w-[80%] flex justify-center flex-col items-center cursor-pointer"
+          >
+            <span class="w-[100%] rounded-2xl flex justify-center mb-1">
+              <img
+                src="./icons/google_contact-icon.png"
+                alt="google_contact-icon"
+                class="w-7 h-7"
+              />
+            </span>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
