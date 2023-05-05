@@ -89,9 +89,12 @@
 
       <!-- header -->
       <!-- header and body wrapper -->
-      <div class="w-full flex flex-col">
-        <header
-          class="w-full h-[7vh] flex justify-between px-4 items-center my-1"
+      <div class="w-full flex flex-col ">
+        
+        <!-- header & keyboard types wrapper -->
+        <section class="w-[92.5%] h-[17vh]  fixed bg-white">
+          <header
+          class="w-full h-[7vh] flex justify-between px-4 items-center my-1 "
         >
           <!-- gmail & logo -->
           <div class="flex items-center cursor-pointer">
@@ -107,7 +110,7 @@
           </div>
           <!-- searchbar -->
           <div
-            class="flex p-1 rounded-lg ml-24"
+            class="flex p-1 rounded-lg ml-20"
             style="background-color: #eaf1fb"
           >
             <span
@@ -169,11 +172,9 @@
           </div>
         </header>
 
-        <!-- body(mails and texts) -->
-        <main class="w-full">
-          <!-- refresh, select type of mails and keyboard type -->
-          <div class="w-full mt-3 p-3 flex justify-between">
-            <div class="w-[14%] flex items-center justify-around px-6">
+        <!-- refresh, select type of mails and keyboard type -->
+          <div class="w-full mt-3 p-3 flex justify-between ">
+            <div class="w-[15%] flex items-center justify-around px-6">
               <!-- checkbox -->
               <span class="flex items-center">
                 <input
@@ -189,7 +190,7 @@
                 ><img
                   src="./icons/refresh-icon.png"
                   alt="refresh-icon"
-                  class="w-[14px] h-[14px]"
+                  class="w-[13px] h-[13px]"
               /></span>
               <!-- vertical view-more -->
               <span class="cursor-pointer"
@@ -200,19 +201,22 @@
               /></span>
             </div>
             <!-- keyboard types -->
-            <div class="flex">
+            <div class="flex mr-10">
               <span class="cursor-pointer"
-                ><img
-                  src="./icons/keyboard-icon.png"
-                  alt="keyboard-icon"
+              ><img
+              src="./icons/keyboard-icon.png"
+              alt="keyboard-icon"
                   class="w-6 h-6"
               /></span>
               <span class="cursor-pointer">▾</span>
             </div>
           </div>
+        </section>
 
+        <!-- body(mails and texts) -->
+        <main class="w-full mt-32">
           <!-- types of mail -->
-          <div class="w-full p-2 pl-9 flex justify-between">
+          <div class="w-full p-2 pl-9 flex justify-between ">
             <!-- wrapper for 'important' -->
             <div class="w-[10%]">
               <span class="text-lg cursor-pointer">▴</span>
@@ -228,14 +232,14 @@
                   src="./icons/vertical_menu-icon.png"
                   alt="details-icon"
                   class="w-[20px] h-[20px]"
-              /></span>
+                  /></span>
+                </div>
+              </div>
+              
+              <!-- mails and texts -->
+              <section class="w-full h-[200vh]"></section>
             </div>
-          </div>
-
-          <!-- mails and texts -->
-          <section class="w-full h-[200vh]"></section>
         </main>
-      </div>
 
       <!-- right side bar -->
       <section class="w-[4vw] h-[100vh] flex flex-col items-center py-2">
@@ -260,20 +264,20 @@
                 src="./icons/google_calender-icon.png"
                 alt="google_calender-icon"
                 class="w-7 h-7"
-              />
-            </span>
-          </div>
-
-          <!-- google keep-->
-          <div
+                />
+              </span>
+            </div>
+            
+            <!-- google keep-->
+            <div
             class="w-[80%] flex justify-center flex-col items-center cursor-pointer"
           >
-            <span class="w-[100%] rounded-2xl flex justify-center mb-1">
-              <img
-                src="./icons/google_keep-icon.png"
-                alt="google_keep-icon"
-                class="w-7 h-7"
-              />
+          <span class="w-[100%] rounded-2xl flex justify-center mb-1">
+            <img
+            src="./icons/google_keep-icon.png"
+            alt="google_keep-icon"
+            class="w-7 h-7"
+            />
             </span>
           </div>
 
@@ -283,7 +287,7 @@
           >
             <span class="w-[100%] rounded-2xl flex justify-center mb-1">
               <img
-                src="./icons/tasks-icon.png"
+              src="./icons/tasks-icon.png"
                 alt="google_tasks-icon"
                 class="w-7 h-7"
               />
