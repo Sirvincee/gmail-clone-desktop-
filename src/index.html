@@ -6,25 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gmail</title>
   <link href="/dist/output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="font-sans">
   <!-- section 1 -->
   <!-- wrapper -->
-  <div class="flex">
+  <div class="flex relative">
     <!-- left-sidebar -->
-    <section class="w-[4vw] h-[100vh] flex flex-col items-center py-2" style="background-color: #eaf1fb">
+    <section class="w-[4.5vw] h-[100vh] flex flex-col items-center py-2 fixed top-0 left-0" style="background-color: #eaf1fb">
       <!-- menu -->
       <div class="flex items-center p-3 hover:rounded-full hover:bg-gray-200 cursor-pointer">
-        <img src="./icons/menu-icon.png" alt="menu-icon" class="w-6 h-5" />
+        <img src="./icons/menu-icon.png" alt="menu-icon" class="w-5 h-4" />
       </div>
       <!-- container for mail, chat & spaces -->
       <!--overall wrapper-->
-      <div class="w-full h-[35vh] mt-6 flex flex-col items-center justify-between py-3">
+      <div class="w-full h-[35vh] mt-4 flex flex-col items-center justify-between py-3">
         <!-- mail -->
         <div class="w-[80%] flex justify-center flex-col items-center cursor-pointer">
           <span class="w-[100%] rounded-2xl flex justify-center px-2 py-1 mb-1" style="background-color: #d3e3fd">
-            <img src="./icons/dark_image-icon.png" alt="mail-icon" class="w-6 h-6" />
+            <img src="./icons/dark_image-icon.png" alt="mail-icon" class="w-5 h-5" />
           </span>
           <span class="text-xs">Mail</span>
         </div>
@@ -32,7 +35,7 @@
         <!-- chat -->
         <div class="w-[80%] flex justify-center flex-col items-center cursor-pointer">
           <span class="w-[100%] rounded-2xl flex justify-center mb-1">
-            <img src="./icons/chat-icon.png" alt="mail-icon" class="w-6 h-6" />
+            <img src="./icons/chat-icon.png" alt="mail-icon" class="w-5 h-5" />
           </span>
           <span class="text-xs">Chat</span>
         </div>
@@ -40,7 +43,7 @@
         <!-- spaces -->
         <div class="w-[80%] flex justify-center flex-col items-center cursor-pointer">
           <span class="w-[100%] rounded-2xl flex justify-center mb-1">
-            <img src="./icons/spaces-icon.png" alt="mail-icon" class="w-6 h-6" />
+            <img src="./icons/spaces-icon.png" alt="mail-icon" class="w-5 h-5" />
           </span>
           <span class="text-xs">Spaces</span>
         </div>
@@ -48,7 +51,7 @@
         <!-- meet -->
         <div class="w-[80%] flex justify-center flex-col items-center cursor-pointer">
           <span class="w-[100%] rounded-2xl flex justify-center mb-1">
-            <img src="./icons/google_meet-icon.png" alt="mail-icon" class="w-6 h-6" />
+            <img src="./icons/google_meet-icon.png" alt="mail-icon" class="w-5 h-5" />
           </span>
           <span class="text-xs">Meet</span>
         </div>
@@ -57,73 +60,73 @@
 
     <!-- header -->
     <!-- header and body wrapper -->
-    <div class="w-full flex flex-col ">
+    <div class="w-full flex flex-col ml-16 ">
 
       <!-- header & keyboard types wrapper -->
-      <section class="w-[92.5%] h-[17vh]  fixed bg-white">
+      <section class="w-[92%] h-[17vh]  fixed bg-white ">
         <header class="w-full h-[7vh] flex justify-between px-4 items-center my-1 ">
           <!-- gmail & logo -->
           <div class="flex items-center cursor-pointer">
-            <span><img src="./icons/gmail-icon.svg" alt="gmail-icon" class="w-9 h-9" /></span>
-            <span class="ml-2 text-2xl font-sans font-medium tracking-tighter">Gmail</span>
+            <span><img src="./icons/gmail-icon.svg" alt="gmail-icon" class="w-8 h-8" /></span>
+            <span class="ml-2 text-xl font-sans font-medium tracking-tighter">Gmail</span>
           </div>
           <!-- searchbar -->
-          <div class="flex p-1 rounded-lg ml-20" style="background-color: #eaf1fb">
+          <div class="flex rounded-lg ml-20 h-10 px-3 items-center" style="background-color: #eaf1fb">
             <span class="p-2 hover:rounded-full hover:bg-gray-200 cursor-pointer"><img src="./icons/search-icon.png"
-                alt="search-icon" class="w-6 h-6" /></span>
+                alt="search-icon" class="w-[18px] h-[18px]" /></span>
             <span class="p-2"><input type="search" name="search" id="search"
-                class="w-[600px] bg-transparent outline-none px-3" placeholder="Search all conversations" />
+                class="w-[560px] bg-transparent outline-none px-3 text-base" placeholder="Search all conversations" />
             </span>
             <span class="p-2 hover:rounded-full hover:bg-gray-200 cursor-pointer"><img src="./icons/filter-icon.png"
-                alt="filter-icon" class="w-6 h-6" /></span>
+                alt="filter-icon" class="w-5 h-5" /></span>
           </div>
           <!-- online presence -->
           <div
-            class="border-2 border-gray-200 flex items-center px-4 py-1 rounded-full hover:bg-gray-200 hover:transition-all ease-linear cursor-pointer ml-[140px]">
-            <span class="mr-14"><img src="./icons/green_coloured-icon.png" alt="green-circle" class="w-3 h-3" /></span>
+            class="border-2 border-gray-200 flex items-center px-4 py-[2px] rounded-full hover:bg-gray-200 cursor-pointer ml-[140px]">
+            <span class="mr-12"><img src="./icons/green_coloured-icon.png" alt="green-circle" class="w-3 h-3" /></span>
             <span class="">▾</span>
           </div>
           <!-- settings and additional components -->
 
           <div class="flex items-center">
             <span class="mx-1 cursor-pointer p-2"><img src="./icons/help-icon.png" alt="help-icon"
-                class="w-6 h-6" /></span>
+                class="w-5 h-5" /></span>
             <span class="mx-1 cursor-pointer p-2 rounded-full hover:rounded-full hover:bg-gray-200"><img
-                src="./icons/settings-icon.png" alt="settings-icon" class="w-6 h-6" /></span>
+                src="./icons/settings-icon.png" alt="settings-icon" class="w-5 h-5" /></span>
             <span class="mx-1 cursor-pointer p-2 rounded-full hover:rounded-full hover:bg-gray-200"><img
-                src="./icons/circled-menu.png" alt="menu-icon" class="w-6 h-6" /></span>
+                src="./icons/circled-menu.png" alt="menu-icon" class="w-5 h-5" /></span>
           </div>
         </header>
 
         <!-- refresh, select type of mails and keyboard type -->
-        <div class="w-full mt-3 p-3 flex justify-between">
-          <div class="w-[15%] flex items-center justify-around px-6">
+        <div class="w-full mt-2 p-3 flex justify-between ">
+          <div class="w-[13%] flex items-center justify-around px-6 ">
             <!-- checkbox -->
-            <span class="flex items-center">
+            <span class="flex items-center ">
               <input type="checkbox" name="select" id="select"
-                class="w-[16px] h-[16px] appearance-none borderlight checked:bg-black cursor-pointer" />
+                class="w-[14px] h-[14px] appearance-none borderlight checked:bg-black cursor-pointer" />
             </span>
             <span class="mr-8 flex items-center">▾</span>
             <!-- refresh -->
-            <span class="h-full mr-8 flex items-center cursor-pointer"><img src="./icons/refresh-icon.png"
+            <span class="h-full mr-8 flex cursor-pointer  w-8 items-center justify-center"><img src="./icons/refresh-icon.png"
                 alt="refresh-icon" class="w-[13px] h-[13px]" /></span>
             <!-- vertical view-more -->
-            <span class="cursor-pointer"><img src="./icons/vertical_menu-icon.png" alt="vertical_view-more"
-                class="w-[22px] h-[22px]" /></span>
+            <span class="cursor-pointer w-8 "><img src="./icons/vertical_menu-icon.png" alt="vertical_view-more"
+                class="w-5 h-4" /></span>
           </div>
           <!-- keyboard types -->
-          <div class="flex">
+          <div class="flex items-center">
             <span class="cursor-pointer"><img src="./icons/keyboard-icon.png" alt="keyboard-icon"
-                class="w-6 h-6" /></span>
+                class="w-5 h-5" /></span>
             <span class="cursor-pointer">▾</span>
           </div>
         </div>
       </section>
 
       <!-- body (text and footer) -->
-      <main class="w-full mt-32 ">
+      <main class="w-[96%] mt-28">
         <!-- types of mail -->
-        <div class="w-full p-2 pl-9 flex justify-between  ">
+        <div class="w-full p-2 mb-2 pl-9 flex justify-between items-center ">
           <!-- wrapper for 'important' -->
           <div class="w-[10%] flex items-center">
             <span class=" cursor-pointer"><img src="./icons/collapse-icon.png" alt="collapse-icon" class="w-3 h-3"></span>
@@ -138,18 +141,18 @@
         </div>
 
         <!-- mails and texts -->
-        <section class="w-full h-[200vh] ">
+        <section class="w-full h-[200vh]  ">
           <table class="w-full ">
 
             <tbody class="w-full ">
               <!-- first mail -->
               <tr>
-                <td class="w-full  flex items-center p-1 justify-between px-6">
+                <td class="w-full  flex items-center p-1 justify-between px-6 ">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">vercel[bot]</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm w-[62%] overflow-hidden whitespace-nowrap text-ellipsis" style="font-family: 'Open Sans', sans-serif;">vercel[bot]</span>
                   </div>
                   <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: fonts (dd9721a)</b> - Successfully
                     deployed to the following URLs: remix-landing - ./remix-landing.vercel.app</div>
@@ -162,9 +165,9 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2  ">
                     <span class="flex items-center "><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span class=""><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold  w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">Barter</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span class=""><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm  w-[62%] overflow-hidden whitespace-nowrap text-ellipsis" style="font-family: 'Open Sans', sans-serif;">Barter</span>
                   </div>
                   <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2 "><b>Barter: You've successfully set up two-factor authentication on Barter</b> - Hi Atunwa, You've successfully set up two-factor authentication on Barter. </div>
                   <div class="text-sm font-bold">May 4</div>
@@ -176,12 +179,12 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
                     <span class="text-sm w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">HiFiCorp</span>
                   </div>
                   <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2">Save big and create long-lasting memories with Mom this Mother's Day! - View this email online DEALS     PAYMENT OPTIONS    BRANDS    LOADSHEDDING</div>
-                  <div class="text-sm font-bold">May 4</div>
+                  <div class="text-sm">May 4</div>
                 </td>
               </tr>
               
@@ -190,9 +193,9 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">IconScout</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm w-[62%] overflow-hidden whitespace-nowrap text-ellipsis" style="font-family: 'Open Sans', sans-serif;">IconScout</span>
                   </div>
                   <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>All things Lottie animations</b> - Hey Vince Idealism, LottieFiles aims to bring motion design to every website, app & digital screen on the planet.</div>
                   <div class="text-sm font-bold">May 4</div>
@@ -204,12 +207,11 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">vercel[bot]</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm  w-[62%] overflow-hidden whitespace-nowrap text-ellipsis" style="font-family: 'Open Sans', sans-serif;">Bolt</span>
                   </div>
-                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: fonts (dd9721a)</b> - Successfully
-                    deployed to the following URLs: remix-landing - ./remix-landing.vercel.app</div>
+                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Atunwa, here’s a discount for your next safe rides 👋</b> - Here’s 20% OFF your next 10 Bolt rides. Bolt rides are not only affordable, but they also come with a number of safety</div>
                   <div class="text-sm font-bold">May 4</div>
                 </td>
               </tr>
@@ -219,13 +221,12 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">vercel[bot]</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">Rumble</span>
                   </div>
-                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: fonts (dd9721a)</b> - Successfully
-                    deployed to the following URLs: remix-landing - ./remix-landing.vercel.app</div>
-                  <div class="text-sm font-bold">May 4</div>
+                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2">Livestreaming Updates & New Features - May 2023 Product Updates. Spring is in full swing, so we're planting the seeds of a vibrant, interactive community with a long  </div>
+                  <div class="text-sm">May 4</div>
                 </td>
               </tr>
 
@@ -234,12 +235,11 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">vercel[bot]</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm  w-[62%] overflow-hidden whitespace-nowrap text-ellipsis" style="font-family: 'Open Sans', sans-serif;">Bailey RD</span>
                   </div>
-                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: fonts (dd9721a)</b> - Successfully
-                    deployed to the following URLs: remix-landing - ./remix-landing.vercel.app</div>
+                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Your training is starting soon!</b> - Hi there - This is just a friendly reminder that the free, LIVE training I'll be hosting tonight at 7pm Eastern is starting soon!</div>
                   <div class="text-sm font-bold">May 4</div>
                 </td>
               </tr>
@@ -249,12 +249,11 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">vercel[bot]</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm  w-[62%] overflow-hidden whitespace-nowrap text-ellipsis" style="font-family: 'Open Sans', sans-serif;">Vercel</span>
                   </div>
-                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: fonts (dd9721a)</b> - Successfully
-                    deployed to the following URLs: remix-landing - ./remix-landing.vercel.app</div>
+                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>[Update] Vercel Terms of Service and New Subprocessors</b> - We have updated our Terms of Service to reflect new feature developments and product expansion. Notable updates</div>
                   <div class="text-sm font-bold">May 4</div>
                 </td>
               </tr>
@@ -264,12 +263,11 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">vercel[bot]</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm  w-[62%] overflow-hidden whitespace-nowrap text-ellipsis" style="font-family: 'Open Sans', sans-serif;">Ricardo</span>
                   </div>
-                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: fonts (dd9721a)</b> - Successfully
-                    deployed to the following URLs: remix-landing - ./remix-landing.vercel.app</div>
+                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>One simple AI trick to market your book</b> - Hi there, It’s time to talk about artificial intelligence again! In last week’s Reedsy marketing newsletter.</div>
                   <div class="text-sm font-bold">May 4</div>
                 </td>
               </tr>
@@ -279,13 +277,12 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">vercel[bot]</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm  w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">Twitter</span>
                   </div>
-                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: fonts (dd9721a)</b> - Successfully
-                    deployed to the following URLs: remix-landing - ./remix-landing.vercel.app</div>
-                  <div class="text-sm font-bold">May 4</div>
+                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2">albert Tweeted: i feel sick to my stomach - </div>
+                  <div class="text-sm">May 4</div>
                 </td>
               </tr>
 
@@ -294,12 +291,11 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">vercel[bot]</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">LinkedIn</span>
                   </div>
-                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: fonts (dd9721a)</b> - Successfully
-                    deployed to the following URLs: remix-landing - ./remix-landing.vercel.app</div>
+                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>1 person noticed you</b> - Your profile is looking great. Your work and accomplishments are being recognized 1 profile view. See who’s looking</div>
                   <div class="text-sm font-bold">May 4</div>
                 </td>
               </tr>
@@ -309,12 +305,11 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">vercel[bot]</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">Upwork  </span>
                   </div>
-                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: fonts (dd9721a)</b> - Successfully
-                    deployed to the following URLs: remix-landing - ./remix-landing.vercel.app</div>
+                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>You have Connects expiring in 1 month</b> - Use your expiring Connects soon. Hi Atunwa, You have Connects expiring soon, but you can still use them to submit a proposal.</div>
                   <div class="text-sm font-bold">May 4</div>
                 </td>
               </tr>
@@ -324,13 +319,12 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">vercel[bot]</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm  w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">Poe </span>
                   </div>
-                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: fonts (dd9721a)</b> - Successfully
-                    deployed to the following URLs: remix-landing - ./remix-landing.vercel.app</div>
-                  <div class="text-sm font-bold">May 4</div>
+                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2">Your verification code - Your Poe verification code is: 122410 Don't share this code with anyone; our employees will never ask for the code.</div>
+                  <div class="text-sm">May 4</div>
                 </td>
               </tr>
 
@@ -339,13 +333,12 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">vercel[bot]</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">Barter</span>
                   </div>
-                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: fonts (dd9721a)</b> - Successfully
-                    deployed to the following URLs: remix-landing - ./remix-landing.vercel.app</div>
-                  <div class="text-sm font-bold">May 4</div>
+                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2">Barter: Password Reset Request - Barter: Password Reset Request. Hey Atunwa, looks like you made an OTP code request. Please use the OTP code [688172] to reset your password.</div>
+                  <div class="text-sm">May 4</div>
                 </td>
               </tr>
 
@@ -354,13 +347,12 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">vercel[bot]</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">no-reply</span>
                   </div>
-                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: fonts (dd9721a)</b> - Successfully
-                    deployed to the following URLs: remix-landing - ./remix-landing.vercel.app</div>
-                  <div class="text-sm font-bold">May 4</div>
+                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2">Statement By Email - Hi, VINCENT CHIBUIKEM ATUNWA. Please find attached your statement as requested. Thank you for choosing Access Bank PLC</div>
+                  <div class="text-sm">May 4</div>
                 </td>
               </tr>
 
@@ -369,12 +361,11 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
-                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">vercel[bot]</span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
+                    <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">Rumble </span>
                   </div>
-                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: fonts (dd9721a)</b> - Successfully
-                    deployed to the following URLs: remix-landing - ./remix-landing.vercel.app</div>
+                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Livestreaming Updates & New Features</b> - May 2023 Product Updates. Live Streaming Updates. Spring is in full swing, so we're planting the seeds of a vibrant, interactive community.</div>
                   <div class="text-sm font-bold">May 4</div>
                 </td>
               </tr>
@@ -384,11 +375,11 @@
                 <td class="w-full  flex items-center p-1 justify-between px-6">
                   <div class="flex items-center w-[11%] justify-between p-1 px-2">
                     <span class="flex items-center"><input type="checkbox" name="mark-mail" id="mark-mail"
-                        class="appearance-none border-2 border-gray-300 w-4 h-4"></span>
-                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-5 h-5"></span>
+                        class="appearance-none border-2 border-gray-300 w-[14px] h-[14px]"></span>
+                    <span><img src="./icons/star-icon.png" alt="starred-icon" class="w-4 h-4"></span>
                     <span class="text-sm font-bold w-[62%] overflow-hidden whitespace-nowrap text-ellipsis">vercel[bot]</span>
                   </div>
-                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: fonts (dd9721a)</b> - Successfully
+                  <div class="text-sm w-[70%] overflow-hidden whitespace-nowrap text-ellipsis p-2"><b>Re:[Sirvince/remix-landing] Subsequent commit: finishing touch (dd9721a)</b> - Successfully
                     deployed to the following URLs: remix-landing - ./remix-landing.vercel.app</div>
                   <div class="text-sm font-bold">May 4</div>
                 </td>
@@ -400,38 +391,38 @@
     </main>
 
     <!-- right side bar -->
-    <section class="w-[4vw] h-[100vh] flex flex-col items-center py-2">
+    <section class="w-[4.5vw] h-[100vh] flex flex-col items-center py-2 bg-white fixed top-0 right-0">
       <!-- profile img -->
       <span class="w-10 h-10 mx-4 mt-1"><img src="./img/sirvince.jpeg" alt="profile-picture"
-          class="w-9 h-9 rounded-full" /></span>
+          class="w-8 h-8 rounded-full" /></span>
       <!-- container for google-calender, google-keep, contact & tasks -->
       <!--overall wrapper-->
-      <div class="w-full h-[35vh] mt-4 flex flex-col items-center justify-between py-8">
+      <div class="w-full h-[35vh] mt-1 flex flex-col items-center justify-between py-8">
         <!-- google-calender-->
         <div class="w-[80%] flex justify-center flex-col items-center cursor-pointer">
           <span class="w-[100%] rounded-2xl flex justify-center">
-            <img src="./icons/google_calender-icon.png" alt="google_calender-icon" class="w-7 h-7" />
+            <img src="./icons/google_calender-icon.png" alt="google_calender-icon" class="w-6 h-6" />
           </span>
         </div>
 
         <!-- google keep-->
         <div class="w-[80%] flex justify-center flex-col items-center cursor-pointer">
           <span class="w-[100%] rounded-2xl flex justify-center mb-1">
-            <img src="./icons/google_keep-icon.png" alt="google_keep-icon" class="w-7 h-7" />
+            <img src="./icons/google_keep-icon.png" alt="google_keep-icon" class="w-6 h-6" />
           </span>
         </div>
 
         <!-- tasks -->
         <div class="w-[80%] flex justify-center flex-col items-center cursor-pointer">
           <span class="w-[100%] rounded-2xl flex justify-center mb-1">
-            <img src="./icons/tasks-icon.png" alt="google_tasks-icon" class="w-7 h-7" />
+            <img src="./icons/tasks-icon.png" alt="google_tasks-icon" class="w-6 h-6" />
           </span>
         </div>
 
         <!-- google contact-->
         <div class="w-[80%] flex justify-center flex-col items-center cursor-pointer">
           <span class="w-[100%] rounded-2xl flex justify-center mb-1">
-            <img src="./icons/google_contact-icon.png" alt="google_contact-icon" class="w-7 h-7" />
+            <img src="./icons/google_contact-icon.png" alt="google_contact-icon" class="w-6 h-6" />
           </span>
         </div>
       </div>
